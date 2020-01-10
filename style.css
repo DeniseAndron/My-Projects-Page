@@ -1,0 +1,332 @@
+/*face ca site-ul sa nu aiba nici o margine*/
+html,body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: #242629;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 1900px;
+}
+
+.zone {
+    /*padding:30px 50px;*/
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    box-shadow:rotate(-7deg);
+}
+
+/***********************************************************************
+ *  Nav Bar  - list style face ca sa nu fie subliniat sau ceva link-ul 
+
+ /sticky ca sa fie nav-ul sticky si fix
+ **********************************************************************/
+.logo {
+   width: 70px;
+   max-width: 70px;
+   padding-right: 2em;
+}
+
+ .sticky {
+     position: fixed;
+     top:0;
+     width:100%;
+ }
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
+}
+/*in momentul in care faci display-ul mai mic, navbar-ul e responsive*/
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+/*Elementul Contacts e impins in stanga*/
+.push {
+    margin-left: auto;
+}
+/*spatiu in navbar words*/
+li {
+    padding: 20px;
+}
+/*culoarea navbar words*/
+a {
+    color: #f5f5f6;
+    text-decoration: none;
+}
+/* text from hero about me*/
+.hero-text {
+    text-align: start;
+    position: relative;
+    /*margin-top: calc(5% + 35px);*/
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 95%;
+    max-width: 1100px;;
+    z-index: 1;
+    }
+    
+    .hero-text h1 {
+    color: #f3f6f7;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+    }
+    
+    .hero-text h2 {
+    font-size: 18px;
+    width: 100%;
+    max-width: 550px;
+    font-weight: 400;
+    color: #94A1B2;
+    line-height: 1.75;
+    margin-top: 10px;
+    
+    }
+
+ /* button for hero*/   
+
+ /* Button for hero section */
+
+.hero-button {
+    color: #f1f1f1;
+    text-transform: uppercase;
+    background-color: rgb(199, 147, 147);
+    padding: 10px 15px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-right: 20px;
+    font-weight: 550;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+   
+  }
+  
+  .hero-button2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 5%;
+    background:#a18740;
+    color: #f1f1f1;
+    font-weight: 550;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  }
+  
+  
+  button:hover {
+    transition: .3s ease;
+    cursor: pointer;
+    transform: translateY(-1px);
+  } 
+
+  
+
+
+/***********************************************************************
+ *  Cover - height, face ca marimea cover-ului sa fie mai mare iar vh, e cat viziunea site-ului
+ align si justify face ca textul sa fie in mijloc
+ **********************************************************************/
+.container {
+        /*show heigh: auto*/
+        height: 50vh; 
+        /*display: flex;*/
+        align-items: center;
+        justify-content: center;
+}
+
+.cover {
+    width:30rem;
+    transform: rotate(-12deg);
+    width: 1220px;
+    display: block;
+    position: relative;
+    margin-left: 44%;
+    padding-top: 50px;
+  
+}
+
+/**/
+.about-title {
+    text-align: center;
+    color: #fffffe;
+    text-transform: uppercase;
+    font-size: 1,8em;
+    font-style: 'Montserat', sans-serif;
+    background-color: #242629;
+}
+
+.about-section {
+    width: 90vw;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5%;
+    
+  }
+  
+  .about-txt {
+    width: 50%;
+  }
+  
+  
+  .about-txt p {
+    margin-top: 5%;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #94A1B2;
+    border-bottom: 2px solid #010101;
+    padding-bottom: 50px;
+    text-align: end;
+  
+  }
+
+
+.break {
+    height:100px;
+}
+
+#contact-jump {
+    color:#989eda;
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color .1s ease;
+    border:none;
+    margin: 50px auto;
+    padding: 0;
+  }
+  
+  #contact-jump i {
+    font-size: 12px;
+    padding-left: 12px;
+    vertical-align: 10%;
+  }
+  
+  #contact-jump:hover {
+    color: black;
+  }
+  
+  #aboutContact {
+    text-decoration: none;
+  
+  }
+
+
+
+.skills h2 {
+    text-align: center;
+    color: #fffffe;
+    text-transform: uppercase;
+    font-size: 1,8em;
+    font-style: 'Montserat', sans-serif;
+    background-color: #242629;
+}
+/***********************************************************************
+ *  Grid Panel- repeat - totul e responsive
+ **********************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+/*padding face marimea imaginii */
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+/*all children of box img to be 100%*/
+.box > img {
+    width: 100%;
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+    text-align: center;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green {
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red {
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.black {
+    background: #242629; /* Old browsers */
+    background: -moz-linear-gradient(top, #242629 0%, #242629 44%, #242629 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242629), color-stop(44%,#242629), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #242629 0%,#242629 44%,#242629 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #242629 0%,#242629 44%,#242629 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #242629 0%,#242629 44%,#242629 100%); /* IE10+ */
+    background: linear-gradient(top, #242629 0%,#242629 44%,#242629 100%); /* W3C */
+}
