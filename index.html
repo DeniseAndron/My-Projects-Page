@@ -3,13 +3,15 @@
 <head>
   <title>Layout Master</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <nav class="zone black sticky">
     <ul class="main-nav">
       <a href="#"><img src="./img/logo.png" alt="logo" class="logo"></a>
-        <li><a href="">About me</a></li>
-        <li><a href="">Skills</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#Skills">Skills</a></li>
         <li><a href="">Projects</a></li>
         <li class="push"><a href="">Contact</a></li>
     </ul>
@@ -21,13 +23,13 @@
     <h2>I'm a junior front end web developer and a javascript developer from
       Arad, Romania.  </h2>
     <br>
-   <a href="#about"><button class="hero-button">Learn More</button></a>
-    <a href="#projects"><button class="hero-button2">See Projects</button></a>
+   <a href="#about"><button class="btn-liquid boton1">Learn More</button></a>
+    <a href="#projects"><button class="btn-liquid boton2">See Projects</button></a>
     <img class="cover" src="./img/forma.png" alt="image for the start">
 </div>
 <!-- image -->
 
-<div class=break></div>
+<div id="break1" class="break1"></div>
 
   <!-- Image container-->
   <!-- <div class="container zone"><img class="cover" src="./img/undraw.png"></div> -->
@@ -55,12 +57,13 @@
     </div>
 
 
-    <div id="break" class="break"></div>
+    <div class="break"></div>
 
     <!-- Skill section-->
   <section class ="SkillsSection" id="skills">
   <div class="skills">
     <h2>skills<i class="fas fa-laptop-code"></i></h2>
+    <div class="break2"></div>
   <div class="zone blue grid-wrapper">
     <div class="box zone"><img src="./img/skill1.png"></div>
     <div class="box zone"><img src="./img/skill2.svg"></div>
@@ -73,13 +76,10 @@
   </div>
     </div>
   </section>
-    
-
-
-
-
   </div>
-  <footer class="zone yellow">made by z => m</footer>
+  <footer class="zone black">made by Denise</footer>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
