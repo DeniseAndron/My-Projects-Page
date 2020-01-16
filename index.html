@@ -3,24 +3,27 @@
 <head>
   <title>Layout Master</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
-  <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
   <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <nav class="zone black sticky">
+  <nav class="zone green sticky">
     <ul class="main-nav">
       <a href="#"><img src="./img/logo.png" alt="logo" class="logo"></a>
-        <li><a href="#">About me</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="">Projects</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li class="push"><a href="">Contact</a></li>
     </ul>
   </nav>
   <div id="break" class="break"></div>
-  <div class="hero-text rellax container zone" data-rellax-speed="-1">
-    <h1><span>Hi, I'm Denise - a junior front/back end web developer.</span></h1>
+  <div id="firstsection"class="hero-text rellax container " data-rellax-speed="-1">
+    
+    <h1 class=" animated bounceInRight"><span>Hi, I'm Denise - a junior front end web developer.</span></h1>
     <br>
-    <h2>I'm a junior front end web developer and a javascript developer from
+    <h2 class=" animated bounceInRight">I'm a junior front end web developer from
       Arad, Romania.  </h2>
     <br>
    <a href="#about"><button class="btn-liquid boton1">Learn More</button></a>
@@ -42,7 +45,7 @@
   </span>
 </div>
 <!--- About Section-->
-  <div class="about-section">
+  <div id="about"class="about-section">
     <div class="about-txt" id="about">
       <p>
         I am a new web developer that is focusing on Javascript and eager to learn.
@@ -75,7 +78,7 @@
     </div>
   </section>
   </div>
-  <footer class="zone black">made by Denise</footer>
+  <footer class="zone green">made by Denise</footer>
 </div>
 
 <script src="script.js"></script>
