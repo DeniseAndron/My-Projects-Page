@@ -74,6 +74,54 @@ a {
     color: #000000;
     text-decoration: none;
 }
+
+/* Bird Animation*/
+
+.container1 {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// min-height: 100vh;
+}
+
+.bird {
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+	background-size: auto 100%;
+	width: 352px;
+	height: 500px;
+	will-change: background-position;
+	
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+
+.bird-container1 {
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	transform: translate(-50%,-50%);
+	will-change: transform;
+}
+
+@keyframes fly-cycle {
+	
+	100% {
+		background-position: -3600px 0;
+	}
+	
+}
+
+
+
+
+
+
 /* text from hero about me*/
 .hero-text {
     line-height:200%;
@@ -167,13 +215,11 @@ a {
 }
 
 .cover {
-    width:30rem;
-    transform: rotate(-12deg);
-    width: 700px;
+   max-width:100%; 
     display: block;
     position: relative;
-    margin-left: 60%;
-    padding-top: 260px;
+    margin-left: 70%;
+    padding-top: 360px;
   
 }
 
@@ -252,7 +298,7 @@ a {
   height:150px;
 }
 
-.skills h2 {
+.projects h2 {
     text-align: center;
    /* width: 1000px; */
     color: #000000;
@@ -275,13 +321,15 @@ a {
 }
 /*padding face marimea imaginii */
 .box {
-    background-color: #C39EA0;
-    padding: 130px;
+   
+    padding: 0px;
     margin: 20px;
 }
 /*all children of box img to be 100%*/
 .box > img {
+  
     width: 100%;
+
 }
 
 /***********************************************************************
