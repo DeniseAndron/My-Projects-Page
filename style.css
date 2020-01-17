@@ -316,11 +316,11 @@ a {
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 20px;
+    /*grid-gap: 20px;*/
 }
 /*padding face marimea imaginii */
 .box {
-   
+    cursor:pointer;
     padding: 0px;
     margin: 20px;
 }
@@ -330,6 +330,99 @@ a {
     width: 100%;
 
 }
+
+/* Hoverbox of the image */
+
+  .hvrbox * {
+    box-sizing: border-box;
+  }
+  .hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  }
+  .hvrbox img {
+    max-width: 100%;
+  }
+  .hvrbox .hvrbox-layer_bottom {
+    display: block;
+  }
+  .hvrbox .hvrbox-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .hvrbox:hover .hvrbox-layer_top,
+  .hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
+  }
+
+  /* The text of the images text*/
+  .hvrbox .hvrbox-text {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .hvrbox .hvrbox-text_mobile {
+    font-size: 15px;
+    border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+    border-top: 1px solid rgba(179, 179, 179, 0.7);
+    margin-top: 5px;
+    padding-top: 2px;
+    display: none;
+  }
+  .hvrbox.active .hvrbox-text_mobile {
+    display: block;
+  }
+  .example_c {
+    color:#FFF !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    
+    padding: 20px;
+    border: 4px solid #FFF !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+
+    .example_c:hover {
+      color: #fff !important;
+      background: #f6b93b;
+      border-color: #f6b93b !important;
+      transition: all 0.4s ease 0s;
+      }
+
+
+
+
+
+
+
+
+
 
 /***********************************************************************
  *  Footer
