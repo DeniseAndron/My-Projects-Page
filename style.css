@@ -5,9 +5,11 @@ html,body {
     background-color: #F8E5E5;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    max-width: 1900px;
+    max-width: 1140px;
 }
 
+
+  
 .zone {
     /*padding:30px 50px;*/
     cursor:pointer;
@@ -75,6 +77,15 @@ a {
     text-decoration: none;
 }
 
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height:100%;
+}
+
+
+
 /* Bird Animation*/
 
 .container1 {
@@ -83,15 +94,15 @@ a {
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	/*min-height: 100vh;*/
+  justify-content: center;
+
 }
 .bird {
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
 	background-size: auto 100%;
-	width: 352px;
-	height: 500px;
-  
+  width: 352px;
+  height: 500px;
+
  
 
 	
@@ -104,10 +115,11 @@ a {
 
 .bird-container1 {
 	position: absolute;
-	top: 560px;
-  left: 60%;
+	margin-top: 600px;
+  margin-left: 200px;
 	transform: translate(-50%,-50%);
-	will-change: transform;
+  will-change: transform;
+
 }
 
 @keyframes fly-cycle {
@@ -134,7 +146,7 @@ a {
     left: 0;
     right: 0;
     width: 95%;
-    max-width: 1100px;;
+    max-width: 1100px;
     z-index: 1;
     }
     
@@ -215,6 +227,7 @@ a {
         /*display: flex;*/
         align-items: center;
         justify-content: center;
+        
 }
 
 .cover {
@@ -224,6 +237,8 @@ a {
     top: 200%;
     bottom: 0;
     height: auto;
+    
+    
   
 }
 
@@ -235,7 +250,7 @@ a {
     color: #000000;
     text-transform: uppercase;
     font-size: 2em;
-    background-color: #F8E5E5;
+   
 }
 
 .about-section {
