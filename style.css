@@ -3,7 +3,8 @@ html,body {
     margin: 0 auto;
     font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
-    max-width: 1800px;   
+    max-width: 1336px;
+       
     overflow-x: hidden;
     background: rgb(70, 15, 33);
 }
@@ -99,54 +100,6 @@ a {
 .break3 {
   height:450px;
 }
-
-/* Bird Animation*/
-
-.container1 {
-  z-index: 1;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-  justify-content: center;
-
-}
-.bird {
-	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
-	background-size: auto 100%;
-  width: 352px;
-  height: 500px;
-
- 
-
-	
-	animation-name: fly-cycle;
-	animation-duration: 1s;
-	animation-delay: -0.5s;
-	animation-timing-function: steps(10);
-	animation-iteration-count: infinite;
-}
-
-.bird-container1 {
-	position: absolute;
-	margin-top: 2800px;
-  margin-left: 500px;
-	transform: translate(-50%,-50%);
-  will-change: transform;
-
-}
-
-@keyframes fly-cycle {
-	
-	100% {
-		background-position: -3600px 0;
-	}
-	
-}
-
-
-
-
 
 
 /* text from hero about me*/
@@ -251,7 +204,7 @@ a {
   width: 100%;
   max-height: 80vh;
   object-fit: cover;
-   overflow: hidden;
+  overflow: hidden;
   position: relative;
 }
 
@@ -287,14 +240,14 @@ a {
 }
 
 .cover {
-    width:25%; 
-    position: absolute;
-    left: 80%;
-    top: 230%;
-    bottom: 0;
-    height: auto;
+    width: 100%;
+    max-width: 300px;
+    height: 70% ;
+    max-height: auto;
+    
     box-shadow: 0 4px 8px 0 rgba(20, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
+    margin-top: 15%;
     
     
   
@@ -305,17 +258,20 @@ a {
   height: 70px;
 }
 .aboutb {
-  background: url(./img/aboutb.jpg) no-repeat center center fixed;
+  background: url(./img/aboutb.jpg)  center center ;
+  width: auto;
   height: 1300px;
+  margin-top:-20px;
   z-index: 1;
   clip-path: polygon(100% 0%, 61% 0%, 30% 0%, 0% 0%, 0% 25%, 0% 75%, 0% 100%, 0% 100%, 100% 51%, 100% 100%, 100% 100%, 100% 100%, 100% 52%, 100% 25%);
-
+  overflow: hidden;
   
 
 
 }
 .about-title {
     text-align: center;
+    margin-left: -100px;
     font-style: 'Special Elite', cursive;
     width: 1000px;
     color: #fff;
@@ -335,7 +291,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -5%;
-    
   }
   .about-txt {
     width: 60%;
@@ -343,14 +298,14 @@ a {
   
   
   .about-txt p {
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     font-size: 20px;
     font-weight: 400px;
     line-height: 40px;
     color: #fff;
     border-bottom: 2px solid #010101;
     padding-bottom: 50px;
-   /* text-align: end; */
+    text-align: end; 
   
   }
 
@@ -389,6 +344,8 @@ a {
   height:250px;
 }
 
+
+
 .projects h2 {
     text-align: center;
    /* width: 1000px; */
@@ -412,7 +369,7 @@ a {
 }
 /*padding face marimea imaginii */
 .box {
-    cursor:pointer;
+   
     padding: 0px;
     margin: 20px;
 }
@@ -495,6 +452,7 @@ a {
   }
   .example_c {
     color:#FFF !important;
+    cursor:pointer;
     text-transform: uppercase;
     text-decoration: none;
     background: transparent;    
@@ -509,14 +467,7 @@ a {
       border-color: #f6b93b !important;
       transition: all 0.4s ease 0s;
       }
-
-
-.contacts{
- 
-}
-
-
-
+/*Skill*/
 
 
 
