@@ -281,6 +281,7 @@ html,body {
 .about-title {
     text-align: center;
     margin-left: -100px;
+    margin-bottom: 60px;
     font-style: 'Special Elite', cursive;
     width: 1000px;
     color: #fff;
