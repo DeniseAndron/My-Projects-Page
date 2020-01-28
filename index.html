@@ -2,22 +2,30 @@
 <html>
 <head >
   <title>Project Denise</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+
+  <meta content="" name="description">
+
+
   <link rel="stylesheet" type="text/css" href="./style.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   
 </head>
 <body>
   <div id="firstsection">
-    <nav class="zone green sticky">
-    <ul class="main-nav">
-      <a href="#firstsection"><img src="./img/logo.png" alt="logo" class="logo"></a>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li class="push"><a href="">Contact</a></li>
+    <nav class="navigation sticky">
+    <ul class="main-nav1">
+      <a href="#firstsection"><img src="./img/firstlogo.png" alt="logo" class="firstlogo"></a>
+        <li class="navcol"><a href="#about">About me</a></li>
+        <li class="navcol"><a href="#skills">Skills</a></li>
+        <li class="navcol"><a href="#projects">Projects</a></li>
+        <li class="push navcol"><a href="">Contact</a></li>
     </ul>
   </nav>
   <div id="particles-js"></div>
@@ -32,8 +40,8 @@
     <h2 class=" animated bounceInRight">I'm a junior front end web developer from
       Arad, Romania.  </h2>
     <br>
-   <a href="#section2"><button class="btn btn-one">Learn More</button></a>
-    <a href="#projects"><button class="btn btn-one">See Projects</button></a>
+   <a href="#section2"><button class="btn1 btn1-one">Learn More</button></a>
+    <a href="#projects"><button class="btn1 btn1-one">See Projects</button></a>
     
     <div id="break3" class="break1"></div>
 </div>
@@ -49,7 +57,7 @@
    <div id="section2"class="aboutb">
    
   <span>
-    <i class="fa fa-address-card"></i>
+    
   </span>
 
 <!--- About Section-->
@@ -61,7 +69,7 @@
   
         <h2>Who am I</h2>
         <span>
-          <i class="fa fa-address-card"></i>
+          
         </span>
       </div>
       <p>    
@@ -85,7 +93,6 @@
   <div class=" animated  infinite pulse projects">
     <h2>Projects<i class="fas fa-laptop-code"></i></h2>
   </div>
-    <div class="break2"></div>
   <div class="  grid-wrapper">
 
     <div class="hvrbox">
@@ -161,6 +168,8 @@
             </div>
           </div>
           </div>
+
+          <div class="break2"></div>
 <!--Skill section-->
 
 
@@ -169,18 +178,174 @@
     <div class="box zone"><img src="./img/skill7.jpg"></div>
     <div class="box zone"><img src="./img/skill8.png"></div> -->
   </div>
-<!-- Begin Mailchimp Signup Form -->
 
-<!--End mc_embed_signup-->
 
 
   </section>
-    <footer class="zone green"></footer>
+
+  <!--==========================
+
+      Contact Section
+
+    ============================-->
+
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container4">
+
+        <div class="animated  infinite pulse section-header">
+
+          <h3>Contact Me</h3>
+
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-sm box wow fadeInUp">
+
+          	<div class="cnt-bg">
+
+            <div class="contact-address">
+
+            	<i class="fa fa-map-marker"></i>
+
+              <!-- <i class="ion-ios-location-outline"></i> -->
+
+              <h3>Address</h3>
+
+              <address>Arad, Romania
+               <br> Willing to relocate<br>
+              </address>
+
+            </div>
+
+       		 </div>
+
+          </div>
+
+          <div class="col-md-4 box wow fadeInUp" data-wow-delay="0.1s">
+
+            <div class="contact-phone">
+
+            	<i class="fa fa-phone"></i>
+
+             <!--  <i class="ion-ios-telephone-outline"></i> -->
+
+              <h3>Phone Number</h3>
+
+              <p><a href="https://api.whatsapp.com/send?phone=+40 741 649 124" target="_blank">+40 741 649 124</a></p>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 box wow fadeInUp" data-wow-delay="0.2s">
+
+            <div class="contact-email">
+
+            	<i class="fa fa-envelope"></i>
+
+              <!-- <i class="ion-ios-email-outline"></i> -->
+
+              <h3>Email</h3>
+
+              <p><a href="mailto:denise.andron@protonmail.com">denise.andron@protonmail.com</a></p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- #contact -->
+
+  </main>
+
+ 
+  <!--==========================
+
+    Footer
+
+  ============================-->
+
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container4">
+
+        <div class="row">
+
+
+
+          <div class="col-lg-6 col-md-6 footer-info wow fadeInUp">
+
+            <h3>Denise Andron</h3>
+
+            <p>Follow me on social media for more information about myself and my work.</p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links wow fadeInUp" data-wow-delay="0.1s">
+
+            <h4>Social Links</h4>
+
+            <ul>
+
+            	<li class="menu-active push-right"><i class="fa fa-chevron-right"></i> <a href="https://www.facebook.com/denni.deny" target="_blank" class="facebook"><i class="fa fa-facebook custom-font-fb"></i></a></li>
+
+            	<li class="push-right"><i class="fa fa-chevron-right  "></i> <a href="https://api.whatsapp.com/send?phone=+40 741 649 124" target="_blank""><i class="fa fa-whatsapp custom-font-wp"></i></a></li>
+
+            	
+            	<li class="push-right"><i class="fa fa-chevron-right "></i> <a href="https://www.linkedin.com/in/andron-denisa-b2839b168/"><i class="fa fa-linkedin custom-font-in"></i></a></li>
+
+             
+
+            </ul>
+
+        </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact wow fadeInUp" data-wow-delay="0.2s">
+
+            <h4>Contact Me</h4>
+
+            <p>
+
+              Arad<br>
+
+              
+              Romania<br>
+
+              <strong>Phone:</strong> +40 741 649 124<br>
+
+              <strong>Email:</strong> denise.andron@protonmail.com<br>
+
+            </p>
+
+          </div>
+
+
+
+         
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer><!-- #footer -->
+
 </div>
 </div>
 <script type="text/javascript" src="particles.js"></script>
 <script type="text/javascript" src="app.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
