@@ -9,7 +9,7 @@ html,body {
   width:100%;
      
   overflow-x: hidden;
-  background: rgb(31, 78, 179) !important; 
+  background: rgb(2, 89, 95) !important; 
 }
 
 #firstsection {
@@ -268,13 +268,16 @@ transform: scale(1.1);
 height: 70px;
 }
 .aboutb {
-background: url(./img/aboutb.jpg)  center center ;
-width: auto;
-height: 1300px;
-margin-top:-20px;
-z-index: 1;
-clip-path: polygon(100% 0%, 61% 0%, 30% 0%, 0% 0%, 0% 25%, 0% 75%, 0% 100%, 0% 100%, 100% 51%, 100% 100%, 100% 100%, 100% 100%, 100% 52%, 100% 25%);
-overflow: hidden;
+    background: url(./img/aboutb.jpg)  center center ;
+    width: auto;
+    height: 1000px;
+    margin-top:-20px;
+    z-index: 1;
+    -webkit-clip-path:polygon(0 0, 100% 0, 100% 69%, 0% 100%);
+
+    clip-path:polygon(0 0, 100% 0, 100% 69%, 0% 100%);
+
+    overflow: hidden;
 
 
 
@@ -525,7 +528,7 @@ width: 0;
   color: #fff;
   text-transform: uppercase;
   font-size: 3em;
-  margin-bottom:100px;
+  margin-bottom:50px;
  
 }
 .break2 {
