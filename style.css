@@ -8,7 +8,7 @@ html,body {
     width:100%;
        
     overflow-x: hidden;
-    background: rgb(70, 15, 33) !important; 
+    background: rgb(126, 22, 56) !important; 
 }
 
 #firstsection {
@@ -306,12 +306,13 @@ html,body {
     width: 60%;
   }
   
-  
   .about-txt p {
     /*margin-top: 5%;*/
     font-size: 20px;
     font-weight: 400px;
-    max-;
+    max-width: 100%;
+    margin-right: 10px;
+
     line-height: 40px;
     color: #fff;
     border-bottom: 2px solid #010101;
