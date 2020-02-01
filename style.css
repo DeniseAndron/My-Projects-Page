@@ -250,13 +250,14 @@ html,body {
 
 .cover {
     width: 100%;
-    max-width: 300px;
-    height: 70% ;
+    max-width: 20%;
+    height: 50% ;
     max-height: auto;
-    
+    margin-left: 50px;
+    margin-right: 100px;
     box-shadow: 0 4px 8px 0 rgba(20, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
-    margin-top: 15%;
+    margin-top: 200px;
     
     
   
@@ -293,7 +294,7 @@ html,body {
 
 .about-section {
   
-    width: 90vw;
+    width: 100%;
     max-width: 1100px;
     display: flex;
     flex-direction: row;
@@ -302,16 +303,14 @@ html,body {
     margin-right: auto;
     margin-bottom: -5%;
   }
-  .about-txt {
-    width: 60%;
-  }
+  
   
   .about-txt p {
     /*margin-top: 5%;*/
     font-size: 20px;
     font-weight: 400px;
-    max-width: 100%;
-    margin-right: 10px;
+    max-width: 60%;
+    
 
     line-height: 40px;
     color: #fff;
@@ -327,7 +326,7 @@ html,body {
 }
 
 #contact-jump {
-    color:#989eda;
+    color:#36aeb3;
     font-style: oblique;
     font-weight: 600;
     font-size: 20px;
@@ -339,7 +338,7 @@ html,body {
   
   #contact-jump i {
     font-size: 12px;
-    padding-left: 12px;
+    padding-left: 180px;
     vertical-align: 10%;
   }
   
